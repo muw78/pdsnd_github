@@ -9,6 +9,10 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 
 
+if __name__ == "__main__":
+    main()
+
+
 def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     city = get_city()
@@ -210,8 +214,6 @@ def main():
             break
 
 
-if __name__ == "__main__":
-    main()
 
 
 
