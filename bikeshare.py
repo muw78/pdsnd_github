@@ -76,7 +76,7 @@ def load_data(city, month, day):
     return df
 
 
-def time_stats(df):
+def time_statistics(df):
     """Displays statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
@@ -104,7 +104,7 @@ def time_stats(df):
     print('-'*40)
 
 
-def station_stats(df):
+def station_statistics(df):
     """Displays statistics on the most popular stations and trip."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
@@ -133,7 +133,7 @@ def station_stats(df):
     print('-'*40)
 
 
-def trip_duration_stats(df):
+def trip_duration_statistics(df):
     """Displays statistics on the total and average trip duration."""
 
     print('\nCalculating Trip Duration...\n')
@@ -151,10 +151,10 @@ def trip_duration_stats(df):
     print('-'*40)
 
 
-def user_stats(df):
+def user_statistics(df):
     """Displays statistics on bikeshare users."""
 
-    print('\nCalculating User Stats...\n')
+    print('\nCalculating User statistics...\n')
     start_time = time.time()
 
     # TO DO: Display counts of user types
@@ -200,10 +200,10 @@ def main():
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
-        time_stats(df)
-        station_stats(df)
-        trip_duration_stats(df)
-        user_stats(df)
+        time_statistics(df)
+        station_statistics(df)
+        trip_duration_statistics(df)
+        user_statistics(df)
         raw_data_output(df)
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
