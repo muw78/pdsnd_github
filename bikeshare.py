@@ -1,3 +1,6 @@
+# Changes are tracked on github: 
+# https://github.com/muw78/pdsnd_github
+
 import time
 import pandas as pd
 import numpy as np
