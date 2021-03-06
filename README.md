@@ -8,6 +8,8 @@ Bikeshare
 
 ### Description
 Bikeshare project from Udacity Python Data Science course
+Changes are track on github: 
+https://github.com/muw78/pdsnd_github
 
 ### Files used
 .gitignore
